@@ -1,1 +1,1 @@
-# Database System Descriptino
+# Database System Description

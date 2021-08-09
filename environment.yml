@@ -18,9 +18,7 @@ dependencies:
   - jinja2=3.0.1=pyhd3eb1b0_0
   - ld_impl_linux-64=2.35.1=h7274673_9
   - libffi=3.3=he6710b0_2
-  - libgcc-ng=9.3.0=h5101ec6_17
   - libgomp=9.3.0=h5101ec6_17
-  - libstdcxx-ng=9.3.0=hd4cf53a_17
   - make=4.3=hd18ef5c_1
   - markupsafe=2.0.1=py39h27cfd23_0
   - ncurses=6.2=he6710b0_1

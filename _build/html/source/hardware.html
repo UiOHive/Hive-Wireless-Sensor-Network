@@ -41,8 +41,8 @@
     
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Database System Descriptino" href="database.html" />
-    <link rel="prev" title="Welcome to the documentation of the Hive Wireless Sensor Network" href="intro.html" /> 
+    <link rel="next" title="Database System Description" href="database.html" />
+    <link rel="prev" title="Introduction" href="intro.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -89,13 +89,16 @@
             
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="intro.html">Welcome to the documentation of the Hive Wireless Sensor Network</a></li>
+<li class="toctree-l1"><a class="reference internal" href="intro.html">Introduction</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Hardware Description</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#version-1-2019">Version 1, 2019</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#version-2-2021">Version 2, 2021</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#sensors">Sensors</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="database.html">Database System Descriptino</a></li>
+<li class="toctree-l1"><a class="reference internal" href="database.html">Database System Description</a></li>
 <li class="toctree-l1"><a class="reference internal" href="data.html">Data Access and Processing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="svalbard.html">Svalbard Network</a></li>
 </ul>
 
             
@@ -170,63 +173,106 @@
 <li><p>a <em>brain</em> box contiaining the poser system, the microcontroller, the communication system and the connectivity to the sensors.</p></li>
 <li><p>a set of sensors either commercially available or custom built at the <a class="reference external" href="https://www.mn.uio.no/geo/english/">Department of Geosciences</a> at UiO as part of the <a class="reference external" href="https://www.mn.uio.no/geo/english/research/projects/hive/">UiO Hive project</a>.</p></li>
 </ol>
-<p><strong>include a photo</strong></p>
+<p>[include a photo]</p>
 <p>The kit is autonomous and packaged as a beam that can be installed on simple mast. The suite of sensors if customizable and depends on the puporse of the project. The main limitations in including new sensors are the communication protocol in between the microcontroller and the sensor, and the power management.</p>
-<p>Currently, there are two versions of the WSN system. These are based on the baord Wasmpote v15 which handle power, communication, and data brokerage. The firmware running all instances has been written as part of the project UiO Hive, and include a set of tools described in the software section.</p>
+<p>Currently, there are two versions of the WSN system: v1 from 2019, and v2 from 2021. Both are based on the board Wasmpote v15 which handle power, communication, and data brokerage. The firmware running all instances has been written as part of the project UiO Hive, and include a set of tools described in the software section.</p>
+<div class="section" id="version-1-2019">
+<h2>Version 1, 2019<a class="headerlink" href="#version-1-2019" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="version-2-2021">
+<h2>Version 2, 2021<a class="headerlink" href="#version-2-2021" title="Permalink to this headline">¶</a></h2>
+</div>
 <div class="section" id="sensors">
 <h2>Sensors<a class="headerlink" href="#sensors" title="Permalink to this headline">¶</a></h2>
-<p>The sensors used on teh stations are the following:</p>
+<p>The sensors used on the stations are the following:</p>
 <table class="colwidths-auto docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Sensor name</p></th>
 <th class="head"><p>Sensor type</p></th>
-<th class="head"><p>I2C address</p></th>
-<th class="head"><p>Arduino Library</p></th>
+<th class="head"><p>Version</p></th>
+<th class="head"><p>Datasheet</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="row-even"><td><p>VL53L1</p></td>
 <td><p>Lidar</p></td>
-<td><p>0x29</p></td>
-<td><p><a class="reference external" href="https://learn.sparkfun.com/tutorials/qwiic-distance-sensor-vl53l1x-hookup-guide/arduino-library-overview">Sparkfun</a></p></td>
+<td><p>v1, v2</p></td>
+<td><p><span class="xref myst">Datasheet</span></p></td>
 </tr>
 <tr class="row-odd"><td><p>MLX90614 IR</p></td>
 <td><p>Thermal IR</p></td>
-<td><p>0x5A</p></td>
-<td><p><a class="reference external" href="https://learn.adafruit.com/using-melexis-mlx90614-non-contact-sensors/">Adafruit</a> <a class="reference external" href="https://learn.sparkfun.com/tutorials/mlx90614-ir-thermometer-hookup-guide#mlx90614-arduino-library">Sparkfun</a></p></td>
+<td><p>v1, v2</p></td>
+<td><p>[Datasheet][mlx90614-sheet]</p></td>
 </tr>
 <tr class="row-even"><td><p>VEML7700</p></td>
 <td><p>Ambient light</p></td>
-<td><p>0x10</p></td>
-<td><p><a class="reference external" href="https://learn.adafruit.com/adafruit-veml7700/arduino">Adafruit</a></p></td>
+<td><p>v2</p></td>
+<td><p>[Datasheet][veml7700-sheet]</p></td>
 </tr>
-<tr class="row-odd"><td><p>ICM-20948</p></td>
-<td><p>Magnetometer, Acc, Gyro</p></td>
-<td><p>0x6B, 0x1E</p></td>
-<td><p><a class="reference external" href="https://learn.adafruit.com/adafruit-tdk-invensense-icm-20948-9-dof-imu">Adafruit</a></p></td>
-</tr>
-<tr class="row-even"><td><p>AS7341</p></td>
+<tr class="row-odd"><td><p>AS7341</p></td>
 <td><p>Specrometer</p></td>
-<td><p>0x39</p></td>
-<td><p><a class="reference external" href="https://learn.adafruit.com/adafruit-as7341-10-channel-light-color-sensor-breakout/arduino">Adafruit</a></p></td>
+<td><p>v2</p></td>
+<td><p>[Datasheet][as7341-sheet]</p></td>
 </tr>
-<tr class="row-odd"><td><p>VCNL-4040</p></td>
+<tr class="row-even"><td><p>VCNL-4040</p></td>
 <td><p>Proximity NIR sensor</p></td>
-<td><p>0x60</p></td>
-<td><p><a class="reference external" href="https://learn.sparkfun.com/tutorials/qwiic-proximity-sensor-vcnl4040-hookup-guide">Sparkfun</a></p></td>
+<td><p>v2</p></td>
+<td><p>[Datasheet][vcnl4040-sheet]</p></td>
 </tr>
-<tr class="row-even"><td><p>BME280</p></td>
+<tr class="row-odd"><td><p>BME280</p></td>
 <td><p>Temperature, humidity, pressure</p></td>
-<td><p>0x77</p></td>
-<td><p><a class="reference external" href="https://learn.adafruit.com/adafruit-bme280-humidity-barometric-pressure-temperature-sensor-breakout/arduino-test">Adafruit</a> <a class="reference external" href="https://learn.sparkfun.com/tutorials/sparkfun-bme280-breakout-hookup-guide#i">Sparkfun</a></p></td>
+<td><p>v1, v2</p></td>
+<td><p>[Datasheet][bme280-sheet]</p></td>
 </tr>
-<tr class="row-odd"><td><p>TMP117</p></td>
+<tr class="row-even"><td><p>TMP117</p></td>
 <td><p>Temperature</p></td>
-<td><p>0x48</p></td>
-<td><p><a class="reference external" href="https://learn.adafruit.com/adafruit-tmp117-high-accuracy-i2c-temperature-monitor">Adafruit</a> <a class="reference external" href="https://learn.sparkfun.com/tutorials/qwiic-tmp117-high-precision-digital-temperature-sensor-hookup-guide">Sparkfun</a></p></td>
+<td><p>v2</p></td>
+<td><p>[Datasheet][tmp117-sheet]</p></td>
+</tr>
+<tr class="row-odd"><td><p>TMP102</p></td>
+<td><p>Temperature</p></td>
+<td><p>v1</p></td>
+<td><p>[Datasheet][tmp102-sheet]</p></td>
+</tr>
+<tr class="row-even"><td><p>SHT31</p></td>
+<td><p>Temperature, humidity</p></td>
+<td><p>v2</p></td>
+<td><p>[Datasheet][sht31-sheet]</p></td>
+</tr>
+<tr class="row-odd"><td><p>ATMOS 22</p></td>
+<td><p>Wind, temperature</p></td>
+<td><p>v1, v2</p></td>
+<td><p>[Datasheet][atmos22-sheet]</p></td>
+</tr>
+<tr class="row-even"><td><p>CTD 10</p></td>
+<td><p>Water temperature, pressure, conductivity</p></td>
+<td><p>v1, v2</p></td>
+<td><p>[Datasheet][ctd10-sheet]</p></td>
+</tr>
+<tr class="row-odd"><td><p>DS18B20</p></td>
+<td><p>Temperature</p></td>
+<td><p>v1, v2</p></td>
+<td><p>[Datasheet][ds18b20-sheet]</p></td>
+</tr>
+<tr class="row-even"><td><p>Maxbotix</p></td>
+<td><p>Temperature</p></td>
+<td><p>v1, v2</p></td>
+<td><p>[Datasheet][ds18b20-sheet]</p></td>
 </tr>
 </tbody>
 </table>
+<p>[mlx90614-sheet]:file:./attachments/MLX90614-Datasheet-Melexis.pdf
+[veml7700-sheet]:file:./attachments/veml7700.pdf
+[as7341-sheet]:file:./attachments/AS7341_DS.pdf
+[vcnl4040-sheet]:file:./attachments/vcnl4040.pdf
+[bme280-sheet]::file:./attachments/bst-bme280-ds002.pdf
+[tmp117-sheet]:file:./attachments/tmp117.pdf
+[tmp102-sheet]:
+[sht31-sheet]:
+[atmos22-sheet]:
+[ds2-sheet]:
+[ctd10-sheet]:
+[ds18b20-sheet]:</p>
 </div>
 </div>
 
@@ -236,8 +282,8 @@
           </div>
           <footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-        <a href="database.html" class="btn btn-neutral float-right" title="Database System Descriptino" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
-        <a href="intro.html" class="btn btn-neutral float-left" title="Welcome to the documentation of the Hive Wireless Sensor Network" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="database.html" class="btn btn-neutral float-right" title="Database System Description" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="intro.html" class="btn btn-neutral float-left" title="Introduction" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
     </div>
 
   <hr/>

@@ -33,8 +33,8 @@ To contribute directle you need to be added as a contributor, or you can fork th
 
 To develop and contribute to the documentation in the most effective way then there are again two ways.
 
-1.  you clone the [CryoGridDocumentation](https://github.com/UiOHive/Hive-Wireless-Sensor-Network) to your computer, edit the files you want, commit your changes and push them to Github. **WARNING: The main drawback of this method is that the changes you made could brake the build of the documentation (conversion of `.rst` and `.md` files to `html`**
-2.  you also clone the [CryoGridDocumentation](https://github.com/UiOHive/Hive-Wireless-Sensor-Network) to your computer, but then you setup your computer with a Miniconda virtual environment.
+1.  you clone the [Hive-Wireless-Sensor-Network](https://github.com/UiOHive/Hive-Wireless-Sensor-Network) to your computer, edit the files you want, commit your changes and push them to Github. **WARNING: The main drawback of this method is that the changes you made could brake the build of the documentation (conversion of `.rst` and `.md` files to `html`**
+2.  you also clone the [Hive-Wireless-Sensor-Network](https://github.com/UiOHive/Hive-Wireless-Sensor-Network) to your computer, but then you setup your computer with a Miniconda virtual environment.
 
 #### Steps to setup the Sphinx documentation environment
 
@@ -43,7 +43,7 @@ To develop and contribute to the documentation in the most effective way then th
 
 ```bash
 # if your setup with SSH on github:
-git clone git@github.com:CryoGrid/CryoGridDocumentation.git
+git clone git@github.com:UiOHive/Hive-Wireless-Sensor-Network.git
 # otherwise:
 git clone https://github.com/UiOHive/Hive-Wireless-Sensor-Network.git
 
@@ -60,7 +60,7 @@ conda env update -n docu_env --file environment.yml
 #### Test building the documentation localy
 ```bash
 # go the documentation folder
-cd CryoGridDocumentation
+cd Hive-Wireless-Sensor-Network
 
 # build the documentation locally on your machine
 make html

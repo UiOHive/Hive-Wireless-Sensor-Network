@@ -43,7 +43,7 @@ From there you will need to obtain a token from the database [administrators](in
 
 For Windows, you need to add the WSN_TOKEN to your environment variables. One way to do this is to right click  `PC -> Properties -> Advanced System settings -> Environment Variables`
 
-![Windows screenshot](windows_env_variables.PNG)
+![Windows screenshot](https://github.com/UiOHive/Hive-Wireless-Sensor-Network/blob/main/attachments/windows_env_variables.PNG)
 
 ##### Brief example to download data
 

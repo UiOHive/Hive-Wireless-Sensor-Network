@@ -14,6 +14,7 @@ Welcome to Hive Wireless Sensor Network's documentation!
    source/hardware
    source/database
    source/data
+   source/svalbard
 
 
 Indices and tables

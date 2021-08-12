@@ -1,7 +1,7 @@
 # Database System Description
 The General concept of the data pipeline consists of the sensors sampling at regular intervals predefined in each nodes. Data are stored locally and also put in a queue to be sent out via radio, 4G or Iridium. Data are then stored in a PostgreSQL database in raw format. This table is accessible by *http* queries using the API [`wsn_client`](https://github.com/spectraphilic/wsn_client) (restricted access). Those data have no quality control and are stored as is. Currently under construction, data are then filtered, flagged for quality, and aggregated into a table. Those data are accessible in `JSON` format via *http* request (restricted access), or in the the case of the Svalbard network in `netcdf4` format via the SIOS dataportal.
 
-![https://github.com/UiOHive/Hive-Wireless-Sensor-Network/blob/main/attachments/Drawing%202021-08-09%2011.53.37.png]
+![](images/Drawing_2021-08-09_11-53-37.png)
 
 ## Download Data from SIOS Dataportal 
 
@@ -43,7 +43,7 @@ From there you will need to obtain a token from the database [administrators](in
 
 For Windows, you need to add the WSN_TOKEN to your environment variables. One way to do this is to right click  `PC -> Properties -> Advanced System settings -> Environment Variables`
 
-![Windows screenshot](https://github.com/UiOHive/Hive-Wireless-Sensor-Network/blob/main/attachments/windows_env_variables.PNG)
+![Windows screenshot](images/windows_env_variables.PNG)
 
 ##### Brief example to download data
 
@@ -122,7 +122,7 @@ query(
 ```
 If using postgresql the available functions are: avg, count, max, min, stddev, sum and variance. If using clickhouse any aggregate function supported by ClickHouse can be used, see [the clickhouse documentation page](https://clickhouse-docs.readthedocs.io/en/latest/agg_functions/). Using aggregates requires the fields paramater as well, it doesn't work when asking for all the fields.
 
-##### Intervalled data, but not aggregates
+##### Intervaled data, but not aggregates
 For certain use cases, it might be useful to get instant measurements for chosen interval, but not averaged or similarly aggregated. An example could be to get every a temperature measurment every five minutes - but the _instant_ measurement, not an averaged number over that half hour.
 
 The method depends on using clickhouse or postgresql.

@@ -13,19 +13,28 @@ The network in Finse is primarily a test ground for the equipment before being s
 
 Due to the very harsh weather, the network is currently partly functionning.
 
-[TBD: insert map]
+
 
 ### Norwegian Permafrost Borehole
-Hive stations equipped 4 permafrost borehole spread across the norwegian mountains to record ground temperatures.
+Hive WSN stations equip 4 permafrost borehole spread across the norwegian mountains to record ground temperatures.
 
 ### Ny-Ålesund, Svalbard Archipelago
 Our largest network is deployed aroud the region of Ny-Ålesund in Svalbard. It is currently spread over two glaciers Kongsvegen, and Midtre-Løvenbreen (aka. two sub networks). The networks are pushing data to the servers 
 
-[TBD: insert map]
+General view
+![](images/fig_map_WSN_new_alesund.png)
+
+Kongsvegen glacier sub network as of 2021:
+![](images/KongsvegenMap.png)
+
+Midtre Løven glacier sub-netwrok as of 2021:
+![](images/MidtreLøvenMap.png)
 
 ## Financial Support
 
 This development is supported by the eInfrastructure hub [UiO Hive](https://www.mn.uio.no/geo/english/research/projects/hive/), and implemented to collect data on the archipelago of Svalbard in collaboration with the [Norwegian Polar Institute](https://www.npolar.no/en/). Additional support from [SIOS](https://sios-svalbard.org/). 
+
+![](images/UiO_Segl_150dpi.png|100)
 
 
 

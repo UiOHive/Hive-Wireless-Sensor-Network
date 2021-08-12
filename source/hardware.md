@@ -15,7 +15,7 @@ Version 1 is the first formalized version of the Hive system. It includes a rang
 [include photo]
 
 ## Version 2, 2021
-Version 2 is an upgraded version which include a number of improvements like new sensors, larger solar panel and enclosure, an added microcontroller to control sensors only. This version was made compatible with the Lora radio network solution, with its own libraries to perform tree topology with Lora radios. 
+Version 2 is an upgraded version which includes a number of improvements like new sensors, larger solar panel and enclosure, an added microcontroller to control sensors only. This version was made compatible with the Lora radio network solution, with its own libraries to perform tree topology with Lora radios. 
 
 [include photo]
 
@@ -55,3 +55,4 @@ The sensors used on the stations are the following:
 
 All sensors use digital comminucation protocols such as [I2C](https://en.wikipedia.org/wiki/I%C2%B2C), [SDI-12](https://en.wikipedia.org/wiki/SDI-12), or [One-Wire](https://en.wikipedia.org/wiki/1-Wire).
 
+Sampling can be set to any time intervals, though in most cases all sensors are sampled every 10 minutes as a trade of for temporal granularity and power saving. All data is associated to its ampling time.

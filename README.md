@@ -54,7 +54,7 @@ conda create -n docu_env
 conda activate docu_env
 
 # install pip. Pip is a Python package installer
-conda env update -n docu_env --file environment.yml
+conda env update -n docu_env --file Hive-Wireless-Sensor-Network/environment.yml
 ```
 
 #### Test building the documentation localy
@@ -67,6 +67,8 @@ make html
 
 # open the new localy built documentation
 firefox _build/html/index.html
+# or for MAC
+# open -a firefox -g _build/html/index.html
 ```
 
 If no error occured during the build then, open the file `_build/html/index.htm` with your browser. If you're happy with your changes, **commit and push** the project to the github documentation. readthedocs.org will build automatically the documentation with the changes you just pushed.

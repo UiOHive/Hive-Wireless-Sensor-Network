@@ -5,7 +5,7 @@ The General concept of the data pipeline consists of the sensors sampling at reg
 
 ## Download Data from SIOS Dataportal 
 
-[TBD]
+[TBA]
 
 ## Download Data Directly from the UiO Django App
 

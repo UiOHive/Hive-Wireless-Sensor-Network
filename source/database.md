@@ -33,6 +33,13 @@ conda create --name uioData  python=3.8
 conda activate uioData
 conda install pandas requests ipython
 
+# in case you use Jupyter Lab
+conda install ipykernel
+ipython kernel install --user --name=uioData
+
+# other python package of interest for data processing
+conda install numpy matplotlib scikit-learn
+
 # cd to a good location to clone the WSN_CLIENT repository
 git clone git@github.com:spectraphilic/wsn_client.git  #uses SSH key to query github otherwise use https: git clone https://github.com/spectraphilic/wsn_client.git
 
